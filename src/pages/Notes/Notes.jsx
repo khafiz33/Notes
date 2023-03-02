@@ -7,8 +7,10 @@ import { Link } from 'react-router-dom';
 import { CiSearch } from 'react-icons/ci';
 import { MdClose } from 'react-icons/md';
 import { BsPlusLg } from 'react-icons/bs';
+import { RiMoonCloudyLine } from 'react-icons/ri';
 // import hooks
 import useNotes from '../../components/hooks/useNotes';
+import useTheme from '../../components/hooks/useTheme';
 // import components
 import NoteItem from '../../components/NoteItem/NoteItem';
 
@@ -17,6 +19,7 @@ function Notes() {
 	const [showSearch, setShowSearch] = React.useState(false);
 	const [text, setText] = React.useState('');
 	const [filteredNotes, setFilteredNotes] = React.useState(notes);
+	const [theme, setTheme] = useTheme();
 
 	const handleSearch = () => {
 		function filteredValidation(note) {
@@ -32,6 +35,9 @@ function Notes() {
 	return (
 		<section>
 			<header className='notes__header'>
+				<button onClick={() => setTheme((prevState) => !prevState)}>{
+					theme ? <RiMoonCloudyLine /> : <BsPlusLg />
+				}</button>
 				{!showSearch && <h2>My Notes</h2>}
 				{showSearch && (
 					<input

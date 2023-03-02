@@ -1,4 +1,6 @@
+// import functions
 import React from 'react';
+// import context
 import { Context } from '../../context/Notes';
 
 const useNotes = (setterOnly) => {
