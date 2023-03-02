@@ -11,6 +11,7 @@
 	color: var(--color-white);
 	font-size: 1.1rem;
 	width: 100%;
+	margin: 0 1.5rem;
 }
 
 .notes__header input::placeholder {
