@@ -20,7 +20,7 @@ function App() {
 	}, [notes]);
 	return (
 		<>
-			<main className={'app' +theme === true ? 'app-dark' : ''}>
+			<main className={`app ${theme === true ? 'app-dark' : ''}`}>
 				<Routes>
 					<Route path='/' element={<Notes />} />
 					<Route path='/create-note' element={<CreateNote />} />
