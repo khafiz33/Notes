@@ -10,8 +10,8 @@
 	border-radius: 0.6rem;
 	color: var(--color-white);
 	font-size: 1.1rem;
+	max-width: 175px;
 	width: 100%;
-	margin: 0 1.5rem;
 }
 
 .notes__header input::placeholder {
