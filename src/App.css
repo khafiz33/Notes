@@ -13,6 +13,7 @@
 :root {
 	--color-bg-dark: #3a3a3a;
 	--color-bg-black: #292f36;
+	--color-bg-white: #fff;
 	--color-white: #cda274;
 	--color-primary: #7634d8;
 	--color-danger: rgb(249, 84, 84);
@@ -60,7 +61,7 @@ body {
 
 #app {
 	font-family: 'Montserrat', sans-serif;
-	background: var(--color-bg-black);
+	background: var(--color-bg-white);
 	height: 39rem;
 	width: 24rem;
 	margin: 1rem 0;
