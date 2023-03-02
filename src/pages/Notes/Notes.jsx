@@ -39,7 +39,7 @@ function Notes() {
 				<button
 					className='btn'
 					onClick={() => setTheme((prevState) => !prevState)}>
-					{theme ? <RiMoonCloudyLine /> : <BiSun />}
+					{theme ? <BiSun /> : <RiMoonCloudyLine />}
 				</button>
 				{!showSearch && <h2>My Notes</h2>}
 				{showSearch && (
