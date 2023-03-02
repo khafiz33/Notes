@@ -59,7 +59,7 @@ body {
 	box-shadow: none;
 }
 
-#app {
+.app {
 	font-family: 'Montserrat', sans-serif;
 	background: var(--color-bg-white);
 	height: 39rem;
