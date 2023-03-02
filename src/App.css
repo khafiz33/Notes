@@ -70,6 +70,10 @@ body {
 	position: relative;
 }
 
+.app-dark {
+	background: var(--color-bg-black);
+}
+
 ::-webkit-scrollbar {
 	display: none;
 }
