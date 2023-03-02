@@ -5,13 +5,15 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 // import hooks
 import useNotes from './components/hooks/useNotes';
+import useTheme from './components/hooks/useTheme';
 // import components
 import CreateNote from './pages/CreateNote/CreateNote';
 import EditNote from './pages/EditNote/EditNote';
 import Notes from './pages/Notes/Notes';
 
 function App() {
-	const [notes] = useNotes(false);
+	const [notes] = useNotes();
+	const [theme] = useTheme();
 
 	React.useEffect(() => {
 		localStorage.setItem('notes', JSON.stringify(notes));
