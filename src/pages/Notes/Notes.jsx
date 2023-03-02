@@ -35,10 +35,12 @@ function Notes() {
 
 	return (
 		<section>
-			<header className='notes__header'>
-				<button className='btn' onClick={() => setTheme((prevState) => !prevState)}>{
-					theme ? <RiMoonCloudyLine /> : <BiSun />
-				}</button>
+			<header className={`notes__header ${theme === true ? 'notes__header-dark' : ''}`}>
+				<button
+					className='btn'
+					onClick={() => setTheme((prevState) => !prevState)}>
+					{theme ? <RiMoonCloudyLine /> : <BiSun />}
+				</button>
 				{!showSearch && <h2>My Notes</h2>}
 				{showSearch && (
 					<input
