@@ -89,7 +89,7 @@ h2 {
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 1.6rem 1.5rem;
-	background: var(--color-bg-black);
+	background: var(--color-bg-white);
 	z-index: 9;
 }
 
