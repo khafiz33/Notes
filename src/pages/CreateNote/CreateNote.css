@@ -30,6 +30,11 @@ input {
 	color: var(--color-white);
 }
 
+.create-note__form input::placeholder,
+.create-note__form textarea::placeholder {
+	color: var(--color-white);
+}
+
 .create-note__form input {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 2rem;
