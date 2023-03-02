@@ -8,6 +8,7 @@ import { CiSearch } from 'react-icons/ci';
 import { MdClose } from 'react-icons/md';
 import { BsPlusLg } from 'react-icons/bs';
 import { RiMoonCloudyLine } from 'react-icons/ri';
+import { BiSun } from 'react-icons/bi';
 // import hooks
 import useNotes from '../../components/hooks/useNotes';
 import useTheme from '../../components/hooks/useTheme';
@@ -35,8 +36,8 @@ function Notes() {
 	return (
 		<section>
 			<header className='notes__header'>
-				<button onClick={() => setTheme((prevState) => !prevState)}>{
-					theme ? <RiMoonCloudyLine /> : <BsPlusLg />
+				<button className='btn' onClick={() => setTheme((prevState) => !prevState)}>{
+					theme ? <RiMoonCloudyLine /> : <BiSun />
 				}</button>
 				{!showSearch && <h2>My Notes</h2>}
 				{showSearch && (
