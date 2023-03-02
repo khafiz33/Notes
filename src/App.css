@@ -116,7 +116,7 @@ h2 {
 
 /* MEDIA QUERIES FOR PHONES */
 @media screen and (max-width: 600px) {
-	#app {
+	.app {
 		width: 100vw;
 		height: 100vh;
 		padding: 2rem 1rem;
