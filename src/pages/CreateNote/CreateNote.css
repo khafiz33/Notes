@@ -1,0 +1,36 @@
+:root {
+	--color-white: #fefefe;
+}
+
+.create-note__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.create-note__form {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+input {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.create-note__form input,
+.create-note__form textarea {
+	font-family: 'Montserrat', sans-serif;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background: transparent;
+	border-radius: 0.2rem;
+	font-size: 1.1rem;
+	color: var(--color-white);
+}
+
+.create-note__form input {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem;
+}
