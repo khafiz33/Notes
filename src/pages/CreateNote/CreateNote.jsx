@@ -29,6 +29,8 @@ function CreateNote() {
 
 			// redirect to home page
 			navigate('/');
+		}else {
+			alert('33')
 		}
 	};
 
