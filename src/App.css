@@ -3,11 +3,13 @@
 * {
 	margin: 0;
 	padding: 0;
+
 	border: 0;
+	box-sizing: border-box;
+	
 	outline: 0;
 	list-style: none;
 	text-decoration: none;
-	box-sizing: border-box;
 }
 
 :root {
@@ -21,28 +23,35 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	line-height: 1.5;
+
 	display: grid;
 	place-items: center;
+
 	color: var(--color-white);
 	background: #ccc;
-	line-height: 1.5;
 }
 
 .btn {
-	background: var(--color-bg-dark);
-	border-radius: 0.8rem;
+	font-size: 1.6rem;
+
 	padding: 0.9rem;
 	padding-top: 0.7rem;
 	padding-bottom: 0.3rem;
-	font-size: 1.6rem;
+
 	color: var(--color-white);
+	background: var(--color-bg-dark);
+	border-radius: 0.8rem;
 	box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+
 	transition: all 300ms ease;
 }
 
 .btn.lg {
-	padding: 0.8rem 1.5rem;
 	font-size: 1.2rem;
+
+	padding: 0.8rem 1.5rem;
+
 	box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.4);
 }
 
@@ -55,19 +64,24 @@ body {
 }
 
 .btn:hover {
-	cursor: pointer;
 	box-shadow: none;
+
+	cursor: pointer;
 }
 
 .app {
 	font-family: 'Montserrat', sans-serif;
-	background: var(--color-bg-white);
-	height: 39rem;
+
+	position: relative;
+
 	width: 24rem;
+	height: 39rem;
 	margin: 1rem 0;
 	padding: 2rem 1.6rem;
+
+	background: var(--color-bg-white);
+
 	overflow-y: scroll;
-	position: relative;
 	transition: background 0.3s ease;
 }
 
@@ -91,22 +105,28 @@ h2 {
 
 /* NOTES PAGE */
 .notes__header {
+	z-index: 9;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+
 	padding-bottom: 2rem;
+
 	background: var(--color-bg-white);
-	z-index: 9;
+
 	transition: background 0.3s ease;
 }
 
 .notes__header-dark {
 	background: var(--color-bg-black);
+
 	transition: background 0.3s ease;
 }
 
 .btn.add__btn {
 	position: fixed;
+
 	bottom: 4rem;
 	right: 7rem;
 	padding: 1rem;
@@ -124,23 +144,26 @@ h2 {
 	}
 
 	.notes__header {
+		position: fixed;
+
 		width: 100%;
 		padding: 2rem 1rem;
-		position: fixed;
 		top: 0;
 		left: 0;
 	}
 
 	.notes__container {
 		margin-top: 5rem;
+
 		gap: 1rem;
 	}
 
 	.btn.add__btn {
+		font-size: 1.5rem;
+		
 		padding: 1.2rem;
 		padding-top: 1rem;
 		padding-bottom: 0.5rem;
-		font-size: 1.5rem;
 		bottom: 6%;
 		right: 2rem;
 	}
